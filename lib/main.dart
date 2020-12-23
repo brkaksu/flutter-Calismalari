@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_input/ui/diger_form_islemleri.dart';
 import 'package:flutter_app_input/ui/form_textFormField.dart';
 import 'package:flutter_app_input/ui/input_islemleri.dart';
 import 'package:flutter_app_input/ui/navigasyon_islemleri.dart';
@@ -19,6 +20,7 @@ void main(){
         "/GPage" : (context) => GSayfasi(),
         "/Inputislemleri" : (context) => Inputislemleri(),
         "/FormTextFormField" : (context) => FormTextFormField(),
+        "/DigerFormElemanları" : (context) => DigerFormIslemleri(),
       },
       theme: ThemeData(
           primarySwatch: Colors.orange

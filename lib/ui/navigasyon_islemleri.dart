@@ -85,6 +85,13 @@ class NavigasyonIslemleri extends StatelessWidget {
                   child: Text("Form Işlemleri Sayfasına git"),
                   color: Colors.purple,
                 ),
+                RaisedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/DigerFormElemanları");
+                  },
+                  child: Text("Diğer Form işlemleri sayfasına git"),
+                  color: Colors.purple,
+                ),
               ],
             ),
           ),
