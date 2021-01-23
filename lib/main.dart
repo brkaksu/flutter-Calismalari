@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_input/ui/diger_form_islemleri.dart';
+import 'package:flutter_app_input/ui/date_time_picker.dart';
+import 'package:flutter_app_input/ui/siparis_tercih_sayfasi.dart';
+import 'package:flutter_app_input/ui/form_selection_ogeleri.dart';
 import 'package:flutter_app_input/ui/form_textFormField.dart';
 import 'package:flutter_app_input/ui/input_islemleri.dart';
 import 'package:flutter_app_input/ui/navigasyon_islemleri.dart';
+import 'package:flutter_app_input/ui/stepper_sayfasi.dart';
+import 'package:flutter_app_input/ui/tarih_ve_saat.dart';
 
 
 
@@ -11,16 +15,13 @@ void main(){
       title: "Flutter Dersleri",
       debugShowCheckedModeBanner: false,
       routes: {
-        "/APage" : (context) => ASayfasi(),
-        "/BPage" : (context) => BSayfasi(),
-        "/CPage" : (context) => CSayfasi(),
-        "/DPage" : (context) => DSayfasi(),
-        "/EPage" : (context) => ESayfasi(),
-        "/FPage" : (context) => FSayfasi(),
-        "/GPage" : (context) => GSayfasi(),
         "/Inputislemleri" : (context) => Inputislemleri(),
         "/FormTextFormField" : (context) => FormTextFormField(),
-        "/DigerFormElemanları" : (context) => DigerFormIslemleri(),
+        "/SiparisTercih" : (context) => SiparisTercihSayfasi(),
+        "/FormSelectionOgeleri" : (context) => FormSelectionOgeleri(),
+        "/DateTimePicker" : (context) => DateTimePicker(),
+        "/TarihVeSaat" : (context) => TarihVeSaat(),
+        "/Stepper" : (context) => StepperSinifi(),
       },
       theme: ThemeData(
           primarySwatch: Colors.orange
