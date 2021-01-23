@@ -17,81 +17,55 @@ class NavigasyonIslemleri extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                RaisedButton(
-                  child: Text(
-                    "A sayfasına git",
-                  ),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => ASayfasi()));
-                  },
-                  color: Colors.blue,
-                ),
-                RaisedButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => BSayfasi()));
-                  },
-                  child: Text("B sayfasına Git Ve Veri Gönder"),
-                  color: Colors.red,
-                ),
-                RaisedButton(
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => CSayfasi()));
-                  },
-                  child: Text("C Sayfasına git"),
-                  color: Colors.purple,
-                ),
-                RaisedButton(
-                  onPressed: () {
-                    Navigator.push<bool>(
-                      context,
-                      MaterialPageRoute(builder: (context) => DSayfasi()),
-                    ).then((popOlayindanSonraGelenDeger) {
-                      debugPrint(
-                          "Pop işleminden sonra gelen deger: $popOlayindanSonraGelenDeger");
-                    });
-                  },
-                  child: Text("D Sayfasına Git Ve Gelirken Veri Getir"),
-                  color: Colors.pink,
-                ),
-                RaisedButton(
-                  onPressed: () {
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => ESayfasi()));
-                  },
-                  child: Text("E Sayfasına git ve geri gelme"),
-                  color: Colors.purple,
-                ),
-                RaisedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, "/FPage");
-                  },
-                  child: Text("F Sayfasına git"),
-                  color: Colors.purple,
-                ),
+                //input islemleri
                 RaisedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, "/Inputislemleri");
                   },
                   child: Text("İnput İşlemleri Sayfasına Git"),
-                  color: Colors.purple,
+                  color: Colors.tealAccent,
                 ),
+                //form islemleri sayfasi
                 RaisedButton(
                   onPressed: () {
                     Navigator.pushNamed(context, "/FormTextFormField");
                   },
                   child: Text("Form Işlemleri Sayfasına git"),
-                  color: Colors.purple,
+                  color: Colors.amber,
+                ),
+                //siparis sayfasi örnegi
+                RaisedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/SiparisTercih");
+                  },
+                  child: Text("Siparis Tercih Sayfasi"),
+                  color: Colors.red,
+                ),
+                // form ogeleri calismasi
+                RaisedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/FormSelectionOgeleri");
+                  },
+                  child: Text("Form için tercih yapma sayfasına git"),
+                  color: Colors.indigoAccent,
+                ),
+                //Date Time Sayfasi
+                RaisedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/TarihVeSaat");
+                  },
+                  child: Text("Tarih Ve Saat"),
+                  color: Colors.indigoAccent,
                 ),
                 RaisedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, "/DigerFormElemanları");
+                    Navigator.pushNamed(context, "/Stepper");
                   },
-                  child: Text("Diğer Form işlemleri sayfasına git"),
-                  color: Colors.purple,
+                  child: Text("Stepper"),
+                  color: Colors.indigoAccent,
                 ),
+
+
               ],
             ),
           ),

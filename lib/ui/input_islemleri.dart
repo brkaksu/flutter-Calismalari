@@ -10,12 +10,14 @@ class _InputislemleriState extends State<Inputislemleri> {
 
   TextEditingController textController1;
   FocusNode _focusNode;
+  FocusNode _focusNode1;
   String girilendeger ="";
   int maxLine =1;
   @override
   void initState() {
     super.initState();
     _focusNode = FocusNode();
+    _focusNode1 = FocusNode();
     textController1 = TextEditingController(text: "Varsayılan");
     _focusNode.addListener(() {
       setState(() {
